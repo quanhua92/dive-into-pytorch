@@ -2,6 +2,7 @@
 This is AlexNet implementation from pytorch/torchvision.
 
 Note:
+- The number of nn.Conv2d doesn't match with the original paper.
 - This model uses `nn.AdaptiveAvgPool2d` to allow the model to process images with arbitrary image size. [PR #746]
 - This model doesn't use Local Response Normalization as described in the original paper.
     - This model is implemented in Jan 2017 with pretrained model.
