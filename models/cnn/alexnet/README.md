@@ -9,7 +9,7 @@ Link: [https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convo
 # Implementations
 
 ## AlexNet from pytorch/vision
-- Code: [alexnet-torchvision.py](alexnet-torchvision.py)
+- Code: [alexnet_torchvision.py](alexnet_torchvision.py)
 - Note:
     - The number of nn.Conv2d doesn't match with the original paper.
     - This model uses `nn.AdaptiveAvgPool2d` to allow the model to process images with arbitrary image size. [PR #746]
@@ -22,7 +22,7 @@ Link: [https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convo
     - PR #4667: [pytorch/vision/pull/4667](https://github.com/pytorch/pytorch/pull/4667)
 
 ## AlexNet with Local Response Normalization and correct filter sizes
-- Code: [alexnet-lrn.py](alexnet-lrn.py)
+- Code: [alexnet_lrn.py](alexnet_lrn.py)
 - Note:
     - The number of Conv2d filters now matches with the original paper.
     - Use PyTorch's Local Response Normalization layer which is implemented in Jan 2018. [PR #4667]
